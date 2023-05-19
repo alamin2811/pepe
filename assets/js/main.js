@@ -5,14 +5,14 @@ Author URL: https://themeforest.net/user/uigigs/portfolio
 -----------------------------------------------------------------------------*/
 (function ($) {
     /*-- sticky header scripts start --*/
-    $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 20) {
-            $('.header-section').addClass("sticky");
-        }
-        else {
-            $('.header-section').removeClass("sticky");
-        }
-    });
+    // $(window).on('scroll', function () {
+    //     if ($(this).scrollTop() > 20) {
+    //         $('.header-section').addClass("sticky");
+    //     }
+    //     else {
+    //         $('.header-section').removeClass("sticky");
+    //     }
+    // });
     /*-- sticky header scripts end --*/
 
     $('.counter').counterUp({
@@ -56,3 +56,33 @@ Author URL: https://themeforest.net/user/uigigs/portfolio
 
     new WOW().init();
 })(jQuery);
+
+/*-- copy text js start --*/
+var copyAddress = $(".wallet-address-section");
+if (copyAddress.length) {
+    function copyText() {
+        // Get the text from the div element
+        var text = document.getElementById("WalletAddress").innerText;
+      
+        // Create a temporary textarea element
+        var textarea = document.createElement("textarea");
+        textarea.value = text;
+      
+        // Append the textarea element to the document
+        document.body.appendChild(textarea);
+      
+        // Select the text in the textarea
+        textarea.select();
+        textarea.setSelectionRange(0, 99999); // For mobile devices
+      
+        // Copy the selected text to the clipboard
+        document.execCommand("copy");
+      
+        // Remove the temporary textarea element
+        document.body.removeChild(textarea);
+      
+        // Alert the user that the text has been copied
+        alert("Text copied to clipboard: " + text);
+      }
+}
+/*-- copy text js end --*/

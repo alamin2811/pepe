@@ -1,29 +1,16 @@
 .about-section{
     position: relative;
     overflow: hidden;
-    .shape2{
-        position: absolute;
-        top: -300px;
-        right: 0px;
-        z-index: 0;
-    }
 }
 .about-section-container{
     position: relative;
     z-index: 1;
-    .shape1{
-        position: absolute;
-        top: -518px;
-        left: -250px;
-    }
-
 }
 .about-img-section{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     max-width: 470px;
     width: 100%;
+    border-radius: 40px;
+    overflow: hidden;
     img{
         height: 100%;
         width: 100%;

@@ -28433,7 +28433,7 @@ CSS table of content
 }
 
 .mobile-menu-body {
-  background: #FFFFFF;
+  background: #033527;
   height: 100vh;
 }
 .mobile-menu-body .offcanvas-header .btn-close {
@@ -28505,139 +28505,121 @@ CSS table of content
 /*--------------------------------
 05. Banner Style
 --------------------------------*/
-.banner-section {
-  background: url(../images/bg/banner-bg.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
 .banner-left {
+  padding-top: 56px;
   position: relative;
-}
-.banner-left .banner-chicken1 {
-  position: absolute;
-  top: -35px;
-  left: -67px;
 }
 .banner-left h1 {
-  margin-bottom: 28px;
-  color: #ffffff;
-  max-width: 550px;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #043F2E;
+  width: 800px;
+  position: relative;
+  z-index: 111;
+  margin-bottom: 32px;
+}
+.banner-left h1 span {
+  background: #C8F169;
+  padding: 0px 22px;
+}
+.banner-left h1 span.making {
+  border-radius: 20px 20px 0px 0px;
+  padding-right: 12%;
+}
+.banner-left h1 span.crypto {
+  border-radius: 0px 20px 20px 20px;
 }
 .banner-left p {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 167%;
-  color: #ffffff;
-  max-width: 487px;
-  margin-bottom: 30px;
+  font-size: 22px;
+  line-height: 36px;
+  color: #FFFFFF;
+  margin-bottom: 43px;
 }
-.banner-left ul {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-  gap: 20px;
+.banner-left .banner-pepe {
+  position: absolute;
+  left: -120px;
+  top: -10px;
+}
+
+.banner-btns {
+  max-width: 530px;
+}
+.banner-btns ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 581px;
-  width: 100%;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  flex-wrap: wrap;
+  margin: 0px -15px;
 }
-.banner-left ul li a {
+.banner-btns ul li {
+  width: 50%;
+  padding: 0px 15px;
+  margin-bottom: 30px;
+}
+.banner-btns ul li a {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  padding: 17px 10px;
-  border: 2px solid #ffffff;
+  height: 60px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
-  background: transparent;
   font-weight: 700;
-  font-size: 15px;
-  line-height: 173%;
+  font-size: 18px;
+  line-height: 26px;
   text-align: center;
   color: #ffffff;
-  transition: 0.3s;
 }
-.banner-left ul li a:hover {
-  background: #ffffff;
-  color: #111111;
+.banner-btns ul li a img {
+  position: absolute;
+  left: 25px;
 }
-.banner-left ul li:nth-child(1) a {
-  width: 200px;
-  background: #F3BA2F;
+
+.wallet-address-section {
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50px;
-  border-color: #F3BA2F;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
 }
-.banner-left ul li:nth-child(1) a:hover {
-  background: #F3BA2F;
-  color: #ffffff;
-}
-
-.banner-right .chicken-img {
-  max-width: 320px;
+.wallet-address-section .wallet-address {
+  max-width: 80%;
   width: 100%;
-  margin-left: auto;
-  margin-right: 50px;
-  animation: upAndDown 5s linear infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 7px 15px;
+}
+.wallet-address-section button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-@keyframes upAndDown {
-  0%, 100% {
-    transition: -50px;
-  }
-  50% {
-    transform: translateY(50px);
-  }
+.banner-img {
+  border-radius: 40px;
+  overflow: hidden;
 }
-@media only screen and (max-width: 991px) {
-  .banner-left {
-    max-width: 580px;
-    margin: auto;
-    text-align: center;
-  }
-  .banner-left h1 {
-    margin: auto;
-  }
-  .banner-left p {
-    max-width: 400px;
-    margin: auto;
-    margin-bottom: 30px;
-  }
-  .banner-left .banner-chicken1 {
-    left: 0px;
-  }
-  .banner-right .chicken-img {
-    margin: auto;
-  }
+.banner-img img {
+  height: 100%;
+  width: 100%;
 }
-@media only screen and (max-width: 768px) {
-  .banner-left ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0px;
-    max-width: 340px;
-    margin: auto;
-  }
-  .banner-left ul li {
-    width: 50%;
-    padding: 10px;
-  }
-  .banner-left ul li a {
-    width: 100% !important;
-  }
-  .banner-left ul li:nth-child(1) {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 425px) {
-  .banner-left .banner-chicken1 {
-    top: -90px;
-    max-width: 60px;
-  }
-}
+
 /*--------------------------------
 06. home Style
 --------------------------------*/
@@ -28645,29 +28627,17 @@ CSS table of content
   position: relative;
   overflow: hidden;
 }
-.about-section .shape2 {
-  position: absolute;
-  top: -300px;
-  right: 0px;
-  z-index: 0;
-}
 
 .about-section-container {
   position: relative;
   z-index: 1;
 }
-.about-section-container .shape1 {
-  position: absolute;
-  top: -518px;
-  left: -250px;
-}
 
 .about-img-section {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   max-width: 470px;
   width: 100%;
+  border-radius: 40px;
+  overflow: hidden;
 }
 .about-img-section img {
   height: 100%;
