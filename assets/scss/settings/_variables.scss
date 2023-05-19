@@ -1,0 +1,41 @@
+/*-- font family included --*/
+/*-- Bai Jamjuree family --*/
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap');
+$bai: 'Bai Jamjuree', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+$sigmar: 'Sigmar One', cursive;
+
+
+
+//font family functions
+@function fontfamily($key) {
+    //font family map
+    $fontFamily: (
+      bai: $bai,
+      sigmar: $sigmar,
+    );
+    
+    @return map-get($fontFamily, $key);
+}
+
+//color function
+@function color($key) {
+  //colors map
+  $colors: (
+    whiteColor: #ffffff,
+    blackColor: #000000,
+    title:#111111,
+    textColor: #444444,
+    primary: #043F2E,
+  );
+    
+    @return map-get($colors, $key);
+}
+
+//text style mixin
+@mixin textStyle($fontSize, $fontWeight, $lineHeight) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+}

@@ -1,0 +1,28 @@
+.token-benefits-section{
+
+}
+.token-benefits-list{
+    margin-top: 25px;
+    p{
+        padding: 12px 0px;
+        margin-bottom: 0px;
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.25);
+    }
+}
+.token-benefits{
+    &-left{
+        padding-right: 20px;
+    }
+    &-right{
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .token-benefits-list{
+        padding: 0px !important;
+    }
+    .token-benefits-right{
+        margin-top: 0px;
+    }
+}

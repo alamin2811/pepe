@@ -1,0 +1,88 @@
+.roadmap-section{
+    position: relative;
+    z-index: 0;
+}
+.roadmap-container{
+    position: relative;
+}
+.roadmap-shape{
+    position: absolute;
+    left: -20%;
+    top: -117%;
+    z-index: 0;
+}
+.roadmap-content{
+    padding-top: 60px;
+    z-index: 1;
+}
+.roadmap-card{
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    min-height: 100%;
+    overflow: hidden;
+    &.active{
+        background: linear-gradient(180deg, rgba(200, 241, 105, 0.5) 0%, rgba(200, 241, 105, 0) 100%);
+        border-radius: 20px;
+        .roadmap-card-title{
+            background: rgba(255, 255, 255, 0.1);
+            &::after{
+                content: url(../images/icons/roted-icon.png);
+                position: absolute;
+                right: 30px;
+                top: 23px;
+                animation: rotate360 5s linear infinite;
+            }
+        }
+    }
+}
+.roadmap-card-title{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 20px 20px 0px 0px;
+    color: color(title);
+    height: 70px;
+    padding: 15px 30px;
+    position: relative;
+}
+.roadmap-card-body{
+    padding: 24px 30px;
+    ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        li{
+            position: relative;
+            margin-bottom: 18px;
+            padding-left: 25px;
+            &::before{
+                content: '';
+                height: 12px;
+                width: 12px;
+                border: 2px solid rgba(255, 255, 255, 0.2);
+                background: transparent;
+                border-radius: 50%;
+                position: absolute;
+                left: 0px;
+                top: 10px;
+            }
+            &.active{
+                &::before{
+                    background: #C8F169;
+                    border-color: #C8F169;
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes rotate360 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  

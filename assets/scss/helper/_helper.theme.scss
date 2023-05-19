@@ -1,0 +1,20 @@
+.section-title{
+    .title{
+        @include textStyle(18px, 700, 30px);
+        color: color(primary);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 16px;
+        gap: 12px;
+    }
+    h2{
+        margin-bottom: 0px;
+    }
+    &.center{
+        text-align: center;
+        .title{
+            justify-content: center;
+        }
+    }
+}

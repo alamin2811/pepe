@@ -1,0 +1,100 @@
+.token-info-inner{
+    position: relative;
+    z-index: 2;
+}
+.token-chicken-img2{
+    margin-left: 100px;
+    margin-top: -280px;
+    position: relative;
+    z-index: 1;
+}
+.token-info-bg{
+    background: url(../images/bg/token-info-bg.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 100px;
+    border-radius: 50px;
+}
+.token-chicken-img1{
+    position: absolute;
+    right: 80px;
+    bottom: 180px;
+}
+.token-info-card{
+    padding: 62px 66px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 50px;
+    max-width: 719px;
+    width: 100%;
+    min-height: 520px;
+    h2{
+        color: color(whiteColor);
+        margin-bottom: 33px;
+    }
+    ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        li{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 208%;
+            color: #FFFFFF;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1200px){
+    .token-info-bg{
+        padding: 50px;
+    }
+    .token-info-card{
+        max-width: 420px;
+        padding: 30px;
+        min-height: 550px;
+        border-radius: 30px;
+        ul {
+            li{
+                font-size: 18px;
+            }
+        }
+    }
+    .token-chicken-img1{
+        max-width: 180px;
+        right: 70px;
+        bottom: 145px;
+    }
+    .token-chicken-img2{
+        max-width: 320px;
+        margin-left: 50px;
+        margin-top: -230px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .token-chicken-img1 {
+        max-width: 110px;
+        right: 70px;
+        bottom: 140px;
+    }
+    .token-chicken-img2 {
+        max-width: 240px;
+        margin-left: 0px;
+        margin-top: -170px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .token-info-bg{
+        padding: 25px;
+        border-radius: 35px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .token-chicken-img1{
+        display: none;
+    }
+}
