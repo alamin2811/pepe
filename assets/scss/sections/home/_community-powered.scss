@@ -2,8 +2,60 @@
     background: #C8F169;
     border-radius: 50px;
     padding: 81px 100px 91px 100px;
+    position: relative;
+    overflow: hidden;
+    .pepe1{
+        position: absolute;
+        left: 46px;
+        top: 0px;
+        z-index: 0;
+    }
+    .pepe2{
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        z-index: 0;
+    }
 }
 
+.community-powered-content{
+    max-width: 835px;
+    width: 100%;
+    margin-left: auto;
+    z-index: 1;
+}
+
+.community-powered-left{
+    max-width: 340px;
+    width: 100%;
+    h2{
+        color: color(primary);
+        margin-bottom: 37px;
+    }
+    p{
+        color: color(primary);
+    }
+
+}
+
+.counter-conent {
+    p {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 50px;
+        text-transform: uppercase;
+        color: #043F2E;
+        margin-bottom: 0px;
+    }
+
+    h3 {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 50px;
+        color: color(primary);
+
+    }
+}
 
 @media only screen and (max-width: 1200px){
     
