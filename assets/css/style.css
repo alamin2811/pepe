@@ -24,6 +24,7 @@ CSS table of content
 /*-- Bai Jamjuree family --*/
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
 /*--------------------------------
 02. Base style
 --------------------------------*/
@@ -48,8 +49,8 @@ body {
   display: none;
 }
 
-.bg-prima .sigmar {
-  font-family: "Sigmar One", cursive !important;
+.sigmar {
+  font-family: "Sigmar", cursive !important;
 }
 
 h1,
@@ -28683,35 +28684,49 @@ CSS table of content
   margin-bottom: 25px;
 }
 
+.about-us-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 30px 20px 20px 20px;
+  min-height: 100%;
+}
+.about-us-card h5 {
+  margin-top: 21px;
+  margin-bottom: 6px;
+}
+
 @media only screen and (max-width: 768px) {
   .about-right {
     margin-top: 60px;
   }
 }
-.token-benefits-list {
-  margin-top: 25px;
+.quick-start-title {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  margin-bottom: 21px;
 }
-.token-benefits-list p {
-  padding: 12px 0px;
+.quick-start-title span {
+  margin-right: 27px;
+}
+.quick-start-title h6 {
   margin-bottom: 0px;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.25);
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFFFF;
 }
 
-.token-benefits-left {
-  padding-right: 20px;
+.quick-start-steps {
+  margin-bottom: 26px;
 }
-.token-benefits-right {
-  padding-left: 20px;
+.quick-start-steps p {
+  max-width: 367px;
+  margin: auto;
 }
 
-@media only screen and (max-width: 768px) {
-  .token-benefits-list {
-    padding: 0px !important;
-  }
-  .token-benefits-right {
-    margin-top: 0px;
-  }
-}
 .counter-card {
   background: linear-gradient(90deg, #EEF6FB 0%, rgba(238, 246, 251, 0.3) 100%);
   border-radius: 20px;
@@ -28735,47 +28750,12 @@ CSS table of content
     padding: 20px;
   }
 }
-.our-partners-content {
-  padding-top: 30px;
-}
-.our-partners-content ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0px;
-  margin: 0px;
-  flex-wrap: wrap;
-}
-.our-partners-content ul li {
-  width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  margin-bottom: 30px;
+.community-powered-card {
+  background: #C8F169;
+  border-radius: 50px;
+  padding: 81px 100px 91px 100px;
 }
 
-@media only screen and (max-width: 1200px) {
-  .our-partners-content ul li {
-    padding: 0px 10px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .our-partners-content ul li {
-    width: 25%;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .our-partners-content ul li {
-    width: 33.33%;
-  }
-}
-@media only screen and (max-width: 425px) {
-  .our-partners-content ul li {
-    width: 50%;
-  }
-}
 .token-info-inner {
   position: relative;
   z-index: 2;

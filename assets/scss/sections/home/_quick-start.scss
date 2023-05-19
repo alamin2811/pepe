@@ -1,0 +1,29 @@
+.quick-start-title{
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-bottom: 21px;
+    span{
+        margin-right: 27px;
+    }
+    h6{
+        margin-bottom: 0px;
+        font-size: 20px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+}
+.quick-start-steps{
+    margin-bottom: 26px;
+    p{
+        max-width: 367px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    
+}

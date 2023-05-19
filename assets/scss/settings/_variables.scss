@@ -4,15 +4,17 @@
 $bai: 'Bai Jamjuree', sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
-$sigmar: 'Sigmar One', cursive;
+$sigmarOne: 'Sigmar One', cursive;
 
-
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+$sigmar: 'Sigmar', cursive;
 
 //font family functions
 @function fontfamily($key) {
     //font family map
     $fontFamily: (
       bai: $bai,
+      sigmarOne: $sigmarOne,
       sigmar: $sigmar,
     );
     
