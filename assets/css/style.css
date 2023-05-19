@@ -28345,7 +28345,6 @@ CSS table of content
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   padding: 12.5px 20px;
-  /* Note: backdrop-filter has minimal browser support */
   border-radius: 0px 0px 20px 20px;
 }
 
@@ -28390,7 +28389,8 @@ CSS table of content
 .header-right ul li a.social-link {
   height: 45px;
   width: 45px;
-  background: rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 23px;
   border-radius: 23px;
   display: flex;
   align-items: center;
@@ -28537,6 +28537,7 @@ CSS table of content
   line-height: 36px;
   color: #FFFFFF;
   margin-bottom: 43px;
+  padding-top: 16px;
 }
 .banner-left .banner-pepe {
   position: absolute;
@@ -28689,7 +28690,7 @@ CSS table of content
 }
 
 .quick-start-steps {
-  margin-bottom: 26px;
+  margin-bottom: 42px;
 }
 .quick-start-steps p {
   max-width: 367px;
