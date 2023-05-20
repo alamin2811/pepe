@@ -123,13 +123,84 @@
 //   }
 
 
-  @media only screen and (max-width: 991px){
-
+  @media only screen and (max-width: 1200px){
+    .banner-left {
+        h1{
+            font-size: 75px;
+        }
+    }
   }
 
+@media only screen and (max-width: 991px){
+    .banner-left {
+        margin-bottom: 50px;
+        h1{
+            width: auto;
+        }
+    }
+    .banner-btns{
+        max-width: 100%;
+    }
+    .banner-right{
+        margin-top: 30px;
+    }
+    
+}
 @media only screen and (max-width: 768px){
+    .banner-left {
+        h1{
+            font-size: 60px;
+        }
+        p{
+            font-size: 18px;
+        }
+        .banner-pepe {
+            left: -10px;
+            top: -32px;
+            width: 100px;
+        }
+        .wallet-address-section{
+            margin-top: 10px;
+        }
+    }
 
 }
+@media only screen and (max-width: 575px){
+    .banner-left{
+        h1{
+            font-size: 47px;
+        }
+    }
+}
 @media only screen and (max-width: 425px){
+    .banner-left{
+        h1{
+            font-size: 44px;
+            span{
+                padding: 0px 10px;
+            }
+        }
+    }
 
+    .banner-btns ul {
+        li{
+            padding: 0px 10px;
+        }
+    }
+}
+@media only screen and (max-width: 375px){
+    .banner-left{
+        h1{
+            font-size: 36px;
+            span{
+                padding: 0px 10px;
+            }
+        }
+    }
+
+    .banner-btns ul {
+        li{
+            padding: 0px 10px;
+        }
+    }
 }

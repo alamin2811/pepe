@@ -28621,6 +28621,68 @@ CSS table of content
   width: 100%;
 }
 
+@media only screen and (max-width: 1200px) {
+  .banner-left h1 {
+    font-size: 75px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .banner-left {
+    margin-bottom: 50px;
+  }
+  .banner-left h1 {
+    width: auto;
+  }
+  .banner-btns {
+    max-width: 100%;
+  }
+  .banner-right {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner-left h1 {
+    font-size: 60px;
+  }
+  .banner-left p {
+    font-size: 18px;
+  }
+  .banner-left .banner-pepe {
+    left: -10px;
+    top: -32px;
+    width: 100px;
+  }
+  .banner-left .wallet-address-section {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .banner-left h1 {
+    font-size: 47px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .banner-left h1 {
+    font-size: 44px;
+  }
+  .banner-left h1 span {
+    padding: 0px 10px;
+  }
+  .banner-btns ul li {
+    padding: 0px 10px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .banner-left h1 {
+    font-size: 36px;
+  }
+  .banner-left h1 span {
+    padding: 0px 10px;
+  }
+  .banner-btns ul li {
+    padding: 0px 10px;
+  }
+}
 /*--------------------------------
 06. home Style
 --------------------------------*/
@@ -28674,7 +28736,7 @@ CSS table of content
   background: rgba(255, 255, 255, 0.08);
   border-radius: 20px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   padding: 20px;
   margin-bottom: 21px;
@@ -28687,6 +28749,7 @@ CSS table of content
   font-size: 20px;
   line-height: 150%;
   color: #FFFFFF;
+  margin-top: 5px;
 }
 
 .quick-start-steps {
@@ -28722,6 +28785,7 @@ CSS table of content
   width: 100%;
   margin-left: auto;
   z-index: 1;
+  position: relative;
 }
 
 .community-powered-left {
@@ -28751,6 +28815,30 @@ CSS table of content
   color: #043F2E;
 }
 
+@media only screen and (max-width: 1200px) {
+  .community-powered-card .pepe1 {
+    opacity: 0.5;
+  }
+  .community-powered-card .pepe2 {
+    opacity: 0.5;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .community-powered-card {
+    padding: 80px 70px;
+  }
+  .counter-conent h3 {
+    font-size: 30px;
+  }
+  .quick-start-title h6 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .community-powered-card {
+    padding: 60px 20px;
+  }
+}
 .token-info-inner {
   position: relative;
   z-index: 2;
@@ -28809,7 +28897,7 @@ CSS table of content
     padding: 50px;
   }
   .token-info-card {
-    max-width: 420px;
+    max-width: 580px;
     padding: 30px;
     min-height: 550px;
     border-radius: 30px;
@@ -28828,6 +28916,11 @@ CSS table of content
     margin-top: -230px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .token-info-img {
+    right: 0px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .token-chicken-img1 {
     max-width: 110px;
@@ -28839,11 +28932,17 @@ CSS table of content
     margin-left: 0px;
     margin-top: -170px;
   }
+  .token-info-img {
+    max-width: 210px;
+  }
 }
 @media only screen and (max-width: 575px) {
   .token-info-bg {
     padding: 25px;
     border-radius: 35px;
+  }
+  .token-info-img {
+    max-width: 180px;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -28941,6 +29040,11 @@ CSS table of content
     transform: rotate(360deg);
   }
 }
+@media only screen and (max-width: 768px) {
+  .roadmap-content {
+    padding-top: 30px;
+  }
+}
 .faq-content {
   max-width: 770px;
   margin: auto;
@@ -29009,6 +29113,11 @@ CSS table of content
   opacity: 80%;
 }
 
+@media only screen and (max-width: 575px) {
+  .faq-content .accordion {
+    font-size: 15px;
+  }
+}
 /*--------------------------------
 07. footer Style
 --------------------------------*/

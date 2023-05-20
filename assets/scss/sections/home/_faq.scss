@@ -68,3 +68,12 @@
         }
     }
 }
+
+
+@media only screen and (max-width: 575px){
+    .faq-content {
+        .accordion{
+            font-size: 15px;
+        }
+    }
+}
