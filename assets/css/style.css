@@ -28743,34 +28743,6 @@ CSS table of content
     margin-top: 60px;
   }
 }
-.quick-start-title {
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 20px;
-  margin-bottom: 21px;
-}
-.quick-start-title span {
-  margin-right: 27px;
-}
-.quick-start-title h6 {
-  margin-bottom: 0px;
-  font-size: 20px;
-  line-height: 150%;
-  color: #FFFFFF;
-  margin-top: 5px;
-}
-
-.quick-start-steps {
-  margin-bottom: 42px;
-}
-.quick-start-steps p {
-  max-width: 367px;
-  margin: auto;
-}
-
 .community-powered-card {
   background: #C8F169;
   border-radius: 50px;
@@ -28786,7 +28758,7 @@ CSS table of content
 }
 .community-powered-card .pepe2 {
   position: absolute;
-  left: 0px;
+  right: 0px;
   bottom: 0px;
   z-index: 0;
 }
@@ -28850,6 +28822,34 @@ CSS table of content
     padding: 60px 20px;
   }
 }
+.quick-start-title {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  margin-bottom: 21px;
+}
+.quick-start-title span {
+  margin-right: 27px;
+}
+.quick-start-title h6 {
+  margin-bottom: 0px;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-top: 5px;
+}
+
+.quick-start-steps {
+  margin-bottom: 42px;
+}
+.quick-start-steps p {
+  max-width: 367px;
+  margin: auto;
+}
+
 .token-info-inner {
   position: relative;
   z-index: 2;
@@ -29057,6 +29057,47 @@ CSS table of content
 @media only screen and (max-width: 768px) {
   .roadmap-content {
     padding-top: 30px;
+  }
+}
+.our-partners-content {
+  padding-top: 50px;
+}
+.our-partners-content ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+  flex-wrap: wrap;
+}
+.our-partners-content ul li {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .our-partners-content ul li {
+    padding: 0px 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .our-partners-content ul li {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .our-partners-content ul li {
+    width: 33.33%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .our-partners-content ul li {
+    width: 50%;
   }
 }
 .faq-content {
