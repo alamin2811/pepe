@@ -28983,38 +28983,33 @@ CSS table of content
 }
 
 .roadmap-card {
-  background: rgba(255, 255, 255, 0.03);
+  background: transparent;
   border-radius: 20px;
   min-height: 100%;
-  overflow: hidden;
+  position: relative;
 }
-.roadmap-card.active {
-  background: linear-gradient(180deg, rgba(200, 241, 105, 0.5) 0%, rgba(200, 241, 105, 0) 100%);
-  border-radius: 20px;
-}
-.roadmap-card.active .roadmap-card-title {
-  background: rgba(255, 255, 255, 0.1);
-}
-.roadmap-card.active .roadmap-card-title::after {
-  content: url(../images/icons/roted-icon.png);
+.roadmap-card .roadmap-arrow {
   position: absolute;
-  right: 30px;
-  top: 23px;
-  animation: rotate360 5s linear infinite;
+  right: -22px;
+  top: 22px;
 }
 
 .roadmap-card-title {
   background: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  border-radius: 20px 20px 0px 0px;
-  color: #111111;
-  height: 70px;
-  padding: 15px 30px;
+  border-radius: 30px;
+  height: 60px;
+  padding: 5px 30px;
   position: relative;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .roadmap-card-title h4 {
   margin-bottom: 0px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
 }
 
 .roadmap-card-body {
@@ -29042,21 +29037,26 @@ CSS table of content
   top: 10px;
 }
 .roadmap-card-body ul li.active::before {
-  background: #C8F169;
-  border-color: #C8F169;
+  content: url(../images/icons/check-green.svg);
+  border: none;
+  height: auto;
+  width: auto;
+  top: 0px;
 }
 
-@keyframes rotate360 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 1440px) {
+  .roadmap-card .roadmap-arrow {
+    width: 70px;
   }
 }
-@media only screen and (max-width: 768px) {
-  .roadmap-content {
-    padding-top: 30px;
+@media only screen and (max-width: 1440px) {
+  .roadmap-card-title {
+    width: 160px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .roadmap-card .roadmap-arrow {
+    left: 170px;
   }
 }
 .our-partners-content {
