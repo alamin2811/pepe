@@ -44,6 +44,9 @@ body {
   background: #043F2E;
   overflow-x: hidden;
 }
+body.active {
+  background: #033527;
+}
 
 ::-webkit-scrollbar {
   display: none;
@@ -28330,7 +28333,6 @@ CSS table of content
 .header-section {
   background: transparent;
   position: fixed;
-  position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -28443,7 +28445,7 @@ CSS table of content
   opacity: 1;
 }
 .mobile-menu-body .offcanvas-header .btn-close svg {
-  color: #000000;
+  color: #ffffff;
   font-size: 32px;
 }
 .mobile-menu-body .navbar-nav {
@@ -28466,7 +28468,7 @@ CSS table of content
   font-weight: 600;
   font-size: 16px;
   line-height: 30px;
-  color: #111111;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -28475,6 +28477,15 @@ CSS table of content
   color: #ffffff;
   height: 45px;
   margin-top: 10px;
+}
+
+.mobile-logo img {
+  min-width: 60px;
+}
+
+.offcanvas-backdrop {
+  right: 0px;
+  left: auto;
 }
 
 .mobile-menu-social {
@@ -29001,6 +29012,9 @@ CSS table of content
   height: 70px;
   padding: 15px 30px;
   position: relative;
+}
+.roadmap-card-title h4 {
+  margin-bottom: 0px;
 }
 
 .roadmap-card-body {

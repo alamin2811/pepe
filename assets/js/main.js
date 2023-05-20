@@ -44,6 +44,13 @@ Author URL: https://themeforest.net/user/uigigs/portfolio
     /*-- Faq Js End --*/
 
     new WOW().init();
+
+    $(".navbar-toggler").click(function () {
+        $("body").addClass("active");
+    });
+    $(".btn-close").click(function () {
+        $("body").removeClass("active");
+    });
 })(jQuery);
 
 /*-- copy text js start --*/

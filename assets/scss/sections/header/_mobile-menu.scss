@@ -23,7 +23,7 @@
             margin-bottom: 10px;
             opacity: 1;
             svg{
-                color: #000000;
+                color: color(whiteColor);
                 font-size: 32px;
             }
         }
@@ -47,7 +47,7 @@
             font-weight: 600;
             font-size: 16px;
             line-height: 30px;
-            color: #111111;
+            color: color(whiteColor);
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -59,6 +59,16 @@
         }
     }
 }
+.mobile-logo{
+    img{
+        min-width: 60px;
+    }
+}
+.offcanvas-backdrop{
+    right: 0px;
+    left: auto;
+}
+
 .mobile-menu-social {
     display: flex;
     align-items: center;
